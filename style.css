@@ -1,0 +1,323 @@
+/* === Обновленный Header строго по макету === */
+header {
+    background-color: #3260bc; /* Твой синий цвет */
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px; /* Отступы от краев экрана */
+    box-sizing: border-box;
+}
+
+/* Бургер (три полоски) */
+.burger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 65px;
+    height: 70px;
+    cursor: pointer;
+}
+
+.burger-menu span {
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: white;
+    border-radius: 4px;
+}
+
+/* Контейнер для белой полосы поиска */
+.search-container {
+    flex: 1;
+    max-width: 1200px; /* Чтобы поиск не растягивался бесконечно */
+    margin: 0 40px;    /* Расстояние от бургера и профиля */
+    height: 60px;      /* Высота поисковой строки */
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Сама белая инпут-плашка */
+.search-input {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: none;
+    border-radius: 35px; /* Идеальное скругление */
+    padding: 0 70px 0 30px; /* Отступ справа, чтобы текст не залезал под лупу */
+    font-size: 24px;
+    color: #2e56a5;
+    outline: none;
+    box-sizing: border-box;
+}
+
+/* Иконка лупы внутри белого поля */
+.search-icon {
+    position: absolute;
+    right: 25px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none; /* Чтобы клик проходил сквозь лупу в инпут */
+}
+
+.search-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+/* Правая круглая иконка */
+.profile-logo {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-logo svg {
+    width: 100%;
+    height: 100%;
+}
+nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: stretch;
+    padding: 0; 
+    height: 65px;
+    background-color: rgba(46, 86, 165, 1);
+}
+
+.link {
+    flex: 1;              
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+    font-family: sans-serif;
+    transition: 0.3s;      
+    font-weight: 545;
+}
+
+.link:hover {
+    background-color: rgba(33, 70, 144, 1);
+    border-radius: 5px;
+}
+.hero {
+    width: 100%;
+    height: 500px;
+    background-color: rgba(50, 96, 188, 0.700);
+    display: flex;
+    align-items: center;
+}
+
+.hero_img {
+    height: 400px;
+    max-width: 100%; /* Чтобы логотип не ломал верстку на смартфонах */
+    object-fit: contain;
+}
+main{
+    background: #3260BC;
+    background: linear-gradient(365deg,rgba(50, 96, 188, 1) 0%, rgba(50, 96, 188, 0.51) 50%, rgba(255, 255, 255, 1) 100%);
+}
+.hh {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+    padding-block-end: 20px;
+    color: rgba(33, 70, 144, 1);
+    font-size: 75px;
+    background-color: rgb(170, 194, 242);
+    margin-block-end: 50px;
+}
+.setka {
+    margin-bottom: 80px; 
+}
+
+/* === Скругление и стили карточек === */
+.card {
+    width: 100%;               /* Занимает всю ширину своей колонки Bootstrap */
+    max-width: 800px;          /* Ограничиваем максимальный размер на больших мониторах */
+    border-radius: 20px;       /* Радиус скругления углов карточки */
+    overflow: hidden;          /* Обрезает углы картинки сверху и фона снизу по контуру карточки */
+    border: none;              /* Убираем дефолтную серую рамку Bootstrap */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.cdd{
+    list-style-type: none;
+    text-decoration: none;
+
+}
+
+.card:hover {
+    transform: translateY(-1px); /* Теперь карточка слегка приподнимается вверх */
+    box-shadow: 0 10px 20px rgba(0, 128, 255, 0.15); /* Добавляет мягкую тень при наведении */
+}
+
+/* === Картинки внутри карточек === */
+.card-img-top {
+    height: 490px;          
+    object-fit: cover;      
+    object-position: center; 
+    width: 100%;           
+    border-top-left-radius: 50px;  /* Дублируем скругление для надежности */
+    border-top-right-radius: 50px;
+}
+
+.card-body {
+    background-color: rgba(50, 96, 188, 0.800);
+    padding: 25px 15px;         
+}
+
+.card-text {                
+    color: white;
+    font-size: 26px;        
+    font-weight: 500;       
+    margin: 0;
+    line-height: 1.2;
+}
+.sldr{
+    border-radius: 40px;       /* Подбери радиус под свои картинки */
+    display: flex;
+    justify-self: center;
+    width: 1300px;
+    margin-top: 50px;
+    padding-block-end: 50px;
+    background-color: rgba(33, 70, 144, 1);
+    
+}
+.carousel-inner {
+    border-radius: 20px;
+}
+footer{
+    height: 350px;
+    background-color: rgba(33, 70, 144, 1);
+}
+ul{
+    
+    padding-top: 20px;
+}
+li{
+    list-style-type: none;
+    margin-top: 1px;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.copyright{
+    margin-top: 25px;
+    color: white;
+    text-align: center;
+}
+.creator{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+li h4 a {
+    text-decoration: none;
+    color: white; /* Теперь цвет применится точно */
+}
+li h4 a:hover {
+    color: rgb(22, 31, 74); 
+}
+.ftd{
+    display: flex;
+    justify-content: space-between;
+}
+.sn{
+    padding-top: 20px;
+    padding-right: 30px;
+    display: flex;       
+    gap: 15px;
+}
+.dsc{
+    border-radius: 20px;
+}
+.logoft{
+    display: flex;
+    justify-content: right;
+    padding-right: 40px;
+    margin-top: -140px;
+}
+.rzd{
+    text-align: center;
+    color: #284f9d;
+    font-size: 50px;
+    font-weight: 500;
+}
+.sldr .carousel-control-prev {
+    left: -60px; /* Сдвигаем влево */
+    width: 50px;  /* Задаем фиксированную ширину кнопки */
+}
+
+.sldr .carousel-control-next {
+    right: -60px; /* Сдвигаем вправо */
+    width: 50px;  /* Задаем фиксированную ширину кнопки */
+}
+
+/* 3. Опционально: делаем стрелки более заметными (например, черными) */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1); /* Инверсия цвета: если фон белый, стрелки станут черными */
+}
+Для того чтобы изменить внешний вид стрелок Bootstrap, нужно переопределить их стили в CSS. Стандартные стрелки в Bootstrap — это SVG-иконки, которые вставляются через background-image, поэтому просто поменять background-color тут не сработает.
+
+Вот как сделать их похожими на твой дизайн (синяя заливка + белая стрелка):
+
+1. Добавь CSS для кнопок
+Добавь этот код в свой файл стилей. Он заменит стандартную серую прозрачную кнопку на твой синий фон и уберет стандартный SVG, заменив его на твой вариант:
+
+CSS
+/* Настраиваем саму кнопку (заливка) */
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: #5b6ed1 !important; /* Твой синий цвет */
+    width: 50px !important;              /* Ширина кнопки */
+    height: 100px !important;            /* Высота кнопки */
+    border-radius: 0 50px 50px 0;        /* Скругление (для правой кнопки наоборот) */
+    opacity: 1 !important;               /* Убираем прозрачность */
+    top: 50% !important;
+    transform: translateY(-50%);
+}
+
+.carousel-control-prev {
+    border-radius: 0 50px 50px 0;        /* Скругление для левой стороны */
+}
+
+.carousel-control-next {
+    border-radius: 50px 0 0 50px;        /* Скругление для правой стороны */
+}
+
+/* Настраиваем саму стрелочку внутри */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(0) brightness(100%);  /* Делаем иконку белой */
+    background-image: none !important;    /* Убираем стандартный SVG */
+}
+
+/* Рисуем стрелочку через псевдоэлемент или символ */
+.carousel-control-prev-icon::before {
+    content: "❮";
+    font-size: 24px;
+    color: white;
+}
+
+.carousel-control-next-icon::before {
+    content: "❯";
+    font-size: 24px;
+    color: white;
+}
+.third-block{
+    display: flex;
+    justify-content: center;
+    height: 10px;
+    background-color: rgb(19, 45, 101);
+}

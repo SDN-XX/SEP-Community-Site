@@ -1,11 +1,10 @@
-/* === Обновленный Header строго по макету === */
 header {
-    background-color: #3260bc; /* Твой синий цвет */
+    background-color: #3260bc; 
     height: 120px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 40px; /* Отступы от краев экрана */
+    padding: 0 40px; 
     box-sizing: border-box;
 }
 
@@ -30,9 +29,9 @@ header {
 /* Контейнер для белой полосы поиска */
 .search-container {
     flex: 1;
-    max-width: 1200px; /* Чтобы поиск не растягивался бесконечно */
-    margin: 0 40px;    /* Расстояние от бургера и профиля */
-    height: 60px;      /* Высота поисковой строки */
+    max-width: 1200px; 
+    margin: 0 40px;    
+    height: 60px;      
     position: relative;
     display: flex;
     align-items: center;
@@ -44,7 +43,7 @@ header {
     height: 100%;
     background-color: white;
     border: none;
-    border-radius: 35px; /* Идеальное скругление */
+    border-radius: 35px; 
     padding: 0 70px 0 30px; /* Отступ справа, чтобы текст не залезал под лупу */
     font-size: 24px;
     color: #2e56a5;
@@ -61,7 +60,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    pointer-events: none; /* Чтобы клик проходил сквозь лупу в инпут */
+    pointer-events: none; 
 }
 
 .search-icon svg {
@@ -118,7 +117,7 @@ nav {
 
 .hero_img {
     height: 400px;
-    max-width: 100%; /* Чтобы логотип не ломал верстку на смартфонах */
+    max-width: 100%; 
     object-fit: contain;
 }
 main{
@@ -142,11 +141,11 @@ main{
 
 /* === Скругление и стили карточек === */
 .card {
-    width: 100%;               /* Занимает всю ширину своей колонки Bootstrap */
-    max-width: 800px;          /* Ограничиваем максимальный размер на больших мониторах */
-    border-radius: 20px;       /* Радиус скругления углов карточки */
-    overflow: hidden;          /* Обрезает углы картинки сверху и фона снизу по контуру карточки */
-    border: none;              /* Убираем дефолтную серую рамку Bootstrap */
+    width: 100%;               
+    max-width: 800px;          
+    border-radius: 20px;       
+    overflow: hidden;         
+    border: none;              
     transition: transform 0.2s, box-shadow 0.2s;
 }
 .cdd{
@@ -156,8 +155,8 @@ main{
 }
 
 .card:hover {
-    transform: translateY(-1px); /* Теперь карточка слегка приподнимается вверх */
-    box-shadow: 0 10px 20px rgba(0, 128, 255, 0.15); /* Добавляет мягкую тень при наведении */
+    transform: translateY(-1px); 
+    box-shadow: 0 10px 20px rgba(0, 128, 255, 0.15); 
 }
 
 /* === Картинки внутри карточек === */
@@ -166,7 +165,7 @@ main{
     object-fit: cover;      
     object-position: center; 
     width: 100%;           
-    border-top-left-radius: 50px;  /* Дублируем скругление для надежности */
+    border-top-left-radius: 50px;  
     border-top-right-radius: 50px;
 }
 
@@ -183,7 +182,7 @@ main{
     line-height: 1.2;
 }
 .sldr{
-    border-radius: 40px;       /* Подбери радиус под свои картинки */
+    border-radius: 40px;    
     display: flex;
     justify-self: center;
     width: 1300px;
@@ -223,7 +222,7 @@ a{
 }
 li h4 a {
     text-decoration: none;
-    color: white; /* Теперь цвет применится точно */
+    color: white; 
 }
 li h4 a:hover {
     color: rgb(22, 31, 74); 
@@ -254,56 +253,44 @@ li h4 a:hover {
     font-weight: 500;
 }
 .sldr .carousel-control-prev {
-    left: -60px; /* Сдвигаем влево */
-    width: 50px;  /* Задаем фиксированную ширину кнопки */
+    left: -60px; 
+    width: 50px;  
 }
 
 .sldr .carousel-control-next {
-    right: -60px; /* Сдвигаем вправо */
-    width: 50px;  /* Задаем фиксированную ширину кнопки */
+    right: -60px; 
+    width: 50px;  
 }
-
-/* 3. Опционально: делаем стрелки более заметными (например, черными) */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    filter: invert(1); /* Инверсия цвета: если фон белый, стрелки станут черными */
+    filter: invert(1);
 }
-Для того чтобы изменить внешний вид стрелок Bootstrap, нужно переопределить их стили в CSS. Стандартные стрелки в Bootstrap — это SVG-иконки, которые вставляются через background-image, поэтому просто поменять background-color тут не сработает.
-
-Вот как сделать их похожими на твой дизайн (синяя заливка + белая стрелка):
-
-1. Добавь CSS для кнопок
-Добавь этот код в свой файл стилей. Он заменит стандартную серую прозрачную кнопку на твой синий фон и уберет стандартный SVG, заменив его на твой вариант:
-
-CSS
 /* Настраиваем саму кнопку (заливка) */
 .carousel-control-prev,
 .carousel-control-next {
-    background-color: #5b6ed1 !important; /* Твой синий цвет */
-    width: 50px !important;              /* Ширина кнопки */
-    height: 100px !important;            /* Высота кнопки */
-    border-radius: 0 50px 50px 0;        /* Скругление (для правой кнопки наоборот) */
-    opacity: 1 !important;               /* Убираем прозрачность */
+    background-color: #5b6ed1 !important; 
+    width: 50px !important;             
+    height: 100px !important;           
+    border-radius: 0 50px 50px 0;        
+    opacity: 1 !important;               
     top: 50% !important;
     transform: translateY(-50%);
 }
 
 .carousel-control-prev {
-    border-radius: 0 50px 50px 0;        /* Скругление для левой стороны */
+    border-radius: 0 50px 50px 0;       
 }
 
 .carousel-control-next {
-    border-radius: 50px 0 0 50px;        /* Скругление для правой стороны */
+    border-radius: 50px 0 0 50px;      
 }
 
 /* Настраиваем саму стрелочку внутри */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    filter: invert(0) brightness(100%);  /* Делаем иконку белой */
-    background-image: none !important;    /* Убираем стандартный SVG */
+    filter: invert(0) brightness(100%);  
+    background-image: none !important;  
 }
-
-/* Рисуем стрелочку через псевдоэлемент или символ */
 .carousel-control-prev-icon::before {
     content: "❮";
     font-size: 24px;

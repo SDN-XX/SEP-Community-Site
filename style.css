@@ -268,17 +268,16 @@ li h4 a:hover {
 /* Настраиваем саму кнопку (заливка) */
 .carousel-control-prev,
 .carousel-control-next {
-    background-color: #5b6ed1 !important; 
-    width: 50px !important;             
-    height: 100px !important;           
-    border-radius: 0 50px 50px 0;        
+    width: 70px !important;             
+    height: 750px !important;           
+    border-radius: 0px;        
     opacity: 1 !important;               
     top: 50% !important;
     transform: translateY(-50%);
 }
 
 .carousel-control-prev {
-    border-radius: 0 50px 50px 0;       
+    border-radius: 50px 0  0;       
 }
 
 .carousel-control-next {

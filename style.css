@@ -301,9 +301,77 @@ li h4 a:hover {
     font-size: 24px;
     color: white;
 }
-.third-block{
+.thrd{
     display: flex;
     justify-content: center;
-    height: 10px;
-    background-color: rgb(19, 45, 101);
+}
+.third-block{
+    border-radius: 30px;
+    height: 600px;
+    background-color: rgba(33, 70, 144, 1);
+    width: 1300px;
+    margin-top: 50px;
+    margin-block-end: 150px;
+}
+.bb1{
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 50px;
+}
+.disc-list {
+  list-style: none;
+  margin: 0;
+  padding: 0 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.disc-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 20px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.disc-item:hover {
+  background: rgba(50, 96, 188, 0.700);
+}
+
+.disc-num {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.45);
+  min-width: 18px;
+  font-weight: 500;
+}
+
+.disc-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.disc-title {
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 2px;
+}
+
+.disc-meta {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.623);
+}
+
+.disc-count {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.734);
+  flex-shrink: 0;
 }
